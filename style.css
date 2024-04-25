@@ -1,0 +1,60 @@
+body{
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   body {
+    background-color: #0f0;
+   } 
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: #00f;
+    }
+}
+
+
+* {
+    background-color: pink;
+
+
+}
+
+.container {
+    background-color: aqua;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+    /*display: inline-block;*/
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        display: flex;
+    }
+
+    .caja {
+        border: 5px solid black;
+    }
+
+    .galeria {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: 200px;
+    }
+}
